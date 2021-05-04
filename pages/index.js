@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ""
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <title>Javascript Questions</title>
     </Head>
     <div>A starting point</div>
+    <Link href="/questions">Go to Questions</Link>
     </>
   )
 }
